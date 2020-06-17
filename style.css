@@ -1,0 +1,32 @@
+:root {
+    --bg-color: white;
+    --text-color: black;
+  }
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+[data-theme="dark"] {
+    --bg-color: #000;
+    --text-color: #fff;
+  }
+
+
+#button
+ {
+    width: 30%;
+    float: right; 
+    cursor: pointer;
+}
+#innerImage .image {
+  width: 80%;
+  height: 75%;
+  float: right;
+}
+
+#theme-switcher { 
+    cursor: pointer;
+    
+}
