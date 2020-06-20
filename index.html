@@ -7,27 +7,26 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript">
-      // Wait for document to load
       document.addEventListener("DOMContentLoaded", function(event) {
         document.documentElement.setAttribute("data-theme", "light");
-  
+      
         // Get our button switcher
         var themeSwitcher = document.getElementById("theme-switcher");
-  
+      
         // When our button gets clicked
         themeSwitcher.onclick = function() {
           // Get the current selected theme, on the first run
           // it should be `light`
-          var currentTheme = document.documentElement.getAttribute("data-theme");
-  
+          let currentTheme = document.documentElement.getAttribute("data-theme");
+      
           // Switch between `dark` and `light`
           var switchToTheme = currentTheme === "dark" ? "light" : "dark"
-  
+      
           // Set our currenet theme to the new one
           document.documentElement.setAttribute("data-theme", switchToTheme);
         }
       });
-    </script>
+      </script>
     <title>Hotel Task</title>
 </head>
 <body>
@@ -136,7 +135,7 @@
 
 
 
-<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
